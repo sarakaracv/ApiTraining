@@ -1,0 +1,26 @@
+<web-app
+        xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+		http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+        version="3.1">
+
+    <servlet>
+        <servlet-name>PersonServlet</servlet-name>
+        <servlet-class>PersonServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>PersonServlet</servlet-name>
+        <url-pattern>/people/*</url-pattern>
+    </servlet-mapping>
+
+
+    //http://localhost:8080/people/Ada
+    //XMLHttpRequest cannot load http://localhost:8080/people/Ada. No 'Access-Control-Allow-Origin'
+    //header is present on the requested resource. Origin 'null' is therefore not allowed access.
+//http://localhost:8080/people/Ada?password=MyPasswordHere
+    //Basic dXNlcm5hbWU6cGFzc3dvcmQ=
+
+
+</web-app>
